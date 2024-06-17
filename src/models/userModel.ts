@@ -17,6 +17,6 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-const User = mongoose.models.users || mongoose.model("User", userSchema); //User will get converted to users in mongoose.
+const User = mongoose.models['User'] || mongoose.model("User", userSchema); //User will get converted to users in mongoose.
 
 export default User;
